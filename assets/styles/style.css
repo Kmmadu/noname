@@ -177,8 +177,10 @@ main {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        /* flex-direction: column; */
+        visibility: hidden;
     }
+    
 
     .search-container h1 {
         font-size: 20px;
@@ -193,6 +195,12 @@ main {
         width: 100%;
         border-radius: 5px;
         margin-top: 10px;
+    }
+    .search-box button {
+        /* width: 10%;
+        border-radius: 5px;
+        margin-top: 10px; */
+        visibility: hidden;
     }
 
     .search-box button {
