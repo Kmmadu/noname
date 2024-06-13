@@ -1,218 +1,141 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
+/* Header Styles */
 header {
-    background-color: #00933b;
-    padding: 20px 0;
+    background-color: #000080; /* Navy Blue */
+    color: white;
+    padding: 10px 0;
 }
 
-.container {
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.logo {
+header .logo {
     font-size: 24px;
     font-weight: bold;
 }
 
-nav ul {
+header .main-nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
+    gap: 20px;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
+header .main-nav a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
 }
 
-.sell-button {
-    background-color: #ff9900;
-    padding: 10px 20px;
-    border-radius: 5px;
+header .main-nav a:hover {
+    text-decoration: underline;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-}
-
-.search-container {
-    width: 90%;
-    margin-top: 30px;
-    background-color: #00a046;
-    padding: 50px;
-}
-
-.search-container h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.search-container span {
-    background-color: black;
+header .sell-button {
+    background-color: #f5f5f5; /* Light Grey */
+    color: #000080; /* Navy Blue */
     padding: 5px 10px;
     border-radius: 5px;
 }
 
+/* Main Content Styles */
+.search-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000080; /* Navy Blue */
+    color: white;
+}
+
+.search-container h1 {
+    margin-bottom: 20px;
+}
+
+search-container span {
+    color: #f5f5f5; /* Light Grey */
+}
+
 .search-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .search-box input {
-    width: 80%;
-    padding: 15px;
+    padding: 10px;
     border: none;
-    border-radius: 5px 0 0 5px;
-    font-size: 16px;
+    outline: none;
 }
 
 .search-box button {
-    width: 10%;
-    padding: 15px;
+    background-color: #333; /* Dark Grey */
+    color: white;
     border: none;
-    background-color: white;
-    border-radius: 0 5px 5px 0;
+    padding: 10px 15px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.search-box button .fas {
-    color: #00a046;
-    font-size: 16px;
+.search-box button:hover {
+    background-color: #555; /* Slightly lighter grey */
 }
 
-.content {
-    display: flex;
-    width: 90%;
-    margin-top: 20px;
-}
-
+/* Sidebar Styles */
 .sidebar {
-    flex: 1;
-    background-color: #f7f7f7;
+    background-color: #000080; /* Navy Blue */
+    color: white;
     padding: 20px;
-    border-radius: 5px;
-    color: black;
-    max-width: 300px;
 }
 
 .sidebar ul {
     list-style: none;
+    padding: 0;
 }
 
-.sidebar ul li {
+.sidebar li {
     margin-bottom: 15px;
 }
 
-.sidebar ul li a {
-    color: black;
+.sidebar a {
+    color: white;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.sidebar ul li a:hover {
+.sidebar a:hover {
     text-decoration: underline;
 }
 
-.subcategories a {
-    margin-left: 20px;
-    font-size: 14px;
-}
-
+/* Main Content Section */
 .main-content {
-    flex: 2;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.banner img {
-    width: 100%;
-    border-radius: 5px;
+    padding: 20px;
 }
 
 .ad-section {
-    background-color: #ff9900;
-    margin-top: 20px;
+    background-color: white;
     padding: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    color: white;
+    text-align: center;
 }
 
 .ad-section h2 {
-    margin-bottom: 10px;
+    margin-top: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        /* flex-direction: column; */
-        visibility: hidden;
-    }
-    
-
-    .search-container h1 {
-        font-size: 20px;
-    }
-
-    .search-box {
-        flex-direction: column;
-    }
-
-    .search-box input,
-    .search-box button {
-        width: 100%;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-    .search-box button {
-        /* width: 10%;
-        border-radius: 5px;
-        margin-top: 10px; */
-        visibility: hidden;
-    }
-
-    .search-box button {
-        margin-top: 0;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .main-content {
-        margin-left: 0;
-        margin-top: 20px;
-    }
+.ad-section p {
+    color: #666; /* Grey */
 }
