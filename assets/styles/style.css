@@ -34,6 +34,10 @@ header .main-nav ul {
     gap: 20px;
 }
 
+header .main-nav li {
+    font-size: 16px;
+}
+
 header .main-nav a {
     color: white;
     text-decoration: none;
@@ -43,11 +47,21 @@ header .main-nav a:hover {
     text-decoration: underline;
 }
 
-header .sell-button {
+header .login-button {
     background-color: #f5f5f5; /* Light Grey */
     color: #000080; /* Navy Blue */
     padding: 5px 10px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+header .login-button:hover {
+    background-color: #e0e0e0; /* Slightly darker grey */
+}
+
+header .profile i {
+    color: white;
 }
 
 /* Main Content Styles */
@@ -62,7 +76,7 @@ header .sell-button {
     margin-bottom: 20px;
 }
 
-search-container span {
+.search-container span {
     color: #f5f5f5; /* Light Grey */
 }
 
@@ -105,18 +119,13 @@ search-container span {
 
 .sidebar li {
     margin-bottom: 15px;
-}
-
-.sidebar a {
-    color: white;
-    text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.sidebar a:hover {
-    text-decoration: underline;
+.sidebar li i {
+    margin-right: 10px;
 }
 
 /* Main Content Section */
