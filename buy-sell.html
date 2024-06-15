@@ -3,28 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy/Sell - StudentHub</title>
+    <title>StudentHub</title>
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">StudentHub</a></div>
-            <div class="profile">
-                <i class="fas fa-user-circle fa-2x"></i>
-            </div>
+            <div class="logo"><a href="index.html">StudentHub</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="signin.html" id="signInLink">Sign in</a></li>
+                    <li><a href="register.html" id="registerLink">Register</a></li>
+                    <li><a href="buy-sell.html" class="sell-button">Sell</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
         <section class="search-container">
-            <h1>Find anything on campus</h1>
+            <h1>Find accommodation in <span>All Nigerian</span> Universities</h1>
             <div class="search-box">
                 <input type="text" placeholder="I am looking for...">
                 <button aria-label="Search"><i class="fas fa-search"></i></button>
             </div>
         </section>
+        <div class="content">
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="#"><i class="fas fa-building"></i> Property <span>0 ads</span></a></li>
+                    <li><a href="#"><i class="fas fa-couch"></i> Accommodation <span>0 ads</span></a></li>
+                </ul>
+            </aside>
+            <section class="main-content">
+                <div class="ad-section">
+                    <h2>Got something to sell?</h2>
+                    <p>Post an advert for free!</p>
+                </div>
+            </section>
+        </div>
     </main>
+
     <script src="assets/scripts/script.js"></script>
 </body>
 </html>
