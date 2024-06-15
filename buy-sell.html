@@ -10,25 +10,19 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo"><a href="index.html">StudentHub</a></div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="signin.html" id="signInLink">Sign in</a></li>
-                    <li><a href="register.html" id="registerLink">Register</a></li>
-                    <li><button id="sellButton" class="sell-button" onclick="window.location.href='buy-sell.html'">Sell</button></li>
-                </ul>
-            </nav>
+            <div class="logo"><a href="index.html">StudentHub</a>
+            </div><div class="profile">
+                <i class="fas fa-user-circle fa-2x"></i>
         </div>
     </header>
     <main>
-       
-            <section class="main-content">
-                <div class="ad-section">
-                    <h2>Got something to sell?</h2>
-                    <p>Post an advert for free!</p>
-                </div>
-            </section>
-        </div>
+        <section class="search-container">
+            <h1>Find anything on campus</h1>
+            <div class="search-box">
+                <input type="text" placeholder="I am looking for...">
+                <button aria-label="Search"><i class="fas fa-search"></i></button>
+            </div>
+        </section>
     </main>
 
     <script src="assets/scripts/script.js"></script>
