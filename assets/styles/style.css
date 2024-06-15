@@ -58,6 +58,8 @@ header .sell-button {
     color: #000080; /* Navy Blue */
     padding: 5px 10px;
     border-radius: 5px;
+    cursor: pointer;
+    border: none;
 }
 
 /* Main Content Styles */
@@ -216,4 +218,11 @@ header .sell-button {
 
 .auth-container a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #registerLink{
+        display: none;
+    }
+    
 }
