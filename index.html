@@ -10,7 +10,10 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo"><a href="index.html">StudentHub</a></div>
+            <div class="logo"><a href="index.html"><i class="fas fa-home"></i>StudentHub</a></div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav class="main-nav">
                 <ul>
                     <li><a href="signin.html" id="signInLink">Sign in</a></li>
@@ -43,6 +46,19 @@
             </section>
         </div>
     </main>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+
+    menuToggle.addEventListener('click', function() {
+        mainNav.classList.toggle('active');
+        menuToggle.innerHTML = mainNav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    });
+});
+
+    </script>
 
     <script src="assets/scripts/script.js"></script>
 </body>
