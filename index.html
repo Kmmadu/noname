@@ -10,17 +10,19 @@
 <body>
     <header>
         <div class="container">
-
+            <!-- Logo with image -->
             <div class="logo">
                 <a href="index.html">
                     <img src="assets/logos/studenthub.png" alt="StudentHub Logo" class="logo-image">
                 </a>
             </div>
-
-            <div class="logo"><a href="index.html"><i class="fas fa-home"></i>StudentHub</a></div>
+            
+            <!-- Menu toggle button -->
             <button class="menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
+            
+            <!-- Navigation -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="register.html" id="signUpLink">Sign Up</a></li>
@@ -29,6 +31,7 @@
             </nav>
         </div>
     </header>
+    
     <main>
         <section class="search-container">
             <h1>Find accommodation in <span>All Nigerian</span> Universities</h1>
@@ -37,6 +40,7 @@
                 <button aria-label="Search"><i class="fas fa-search"></i></button>
             </div>
         </section>
+        
         <div class="content">
             <aside class="sidebar">
                 <ul>
@@ -44,6 +48,7 @@
                     <li><a href="#"><i class="fas fa-couch"></i> Accommodation <span>0 ads</span></a></li>
                 </ul>
             </aside>
+            
             <section class="main-content">
                 <div class="ad-section">
                     <h2>Got something to sell?</h2>
@@ -52,18 +57,17 @@
             </section>
         </div>
     </main>
+    
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mainNav = document.querySelector('.main-nav');
-
-    menuToggle.addEventListener('click', function() {
-        mainNav.classList.toggle('active');
-        menuToggle.innerHTML = mainNav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-    });
-});
-
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+                menuToggle.innerHTML = mainNav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+        });
     </script>
 
     <script src="assets/scripts/script.js"></script>
