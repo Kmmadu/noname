@@ -17,47 +17,74 @@
                 </a>
             </div>
             
-            <!-- Menu toggle button -->
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            
             <!-- Navigation -->
             <nav class="main-nav">
                 <ul>
-                    <li><a href="register.html" id="signUpLink">Sign Up</a></li>
-                    <li><a href="signin.html" id="logInLink">Log In</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                    <li><a href="signin.html">Log In</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
     <main>
-        <section class="search-container">
-            <h1>Find accommodation in <span>All Nigerian</span> Universities</h1>
-            <div class="search-box">
-                <input type="text" placeholder="I am looking for...">
-                <button aria-label="Search"><i class="fas fa-search"></i></button>
+        <section class="info-section">
+            <div class="container grid">
+                <div class="info-box">
+                    <h2>What is StudentHub?</h2>
+                    <p>StudentHub is dedicated to transforming the student living experience by providing a comprehensive platform tailored specifically for students. Our mission is to simplify the search for accommodation, property purchases, and essential services, making your university life more convenient and enjoyable.</p>
+                </div>
+                <div class="info-box">
+                    <h2>What Can You Find Here?</h2>
+                    <p>At StudentHub, we connect you with the best accommodation options, property listings, and service providers across Nigerian universities. Whether you’re looking for a cozy dorm, a shared apartment, or a property to invest in, our platform offers a wide range of verified listings to meet your needs. We also provide easy reservation options and access to trusted service providers to ensure your stay is comfortable and hassle-free.</p>
+                </div>
+                <div class="info-box">
+                    <h2>How Can StudentHub Help You?</h2>
+                    <p>We understand the unique challenges students face when searching for accommodation and services. Our user-friendly platform allows you to:</p>
+                    <ul>
+                        <li><strong>Find Accommodation:</strong> Browse a variety of housing options, from dormitories to private apartments, tailored to fit your budget and preferences.</li>
+                        <li><strong>Make Reservations:</strong> Secure your desired accommodation quickly and easily through our reservation system.</li>
+                        <li><strong>Buy Property:</strong> Explore investment opportunities with our property listings, perfect for students or their families looking to purchase real estate.</li>
+                        <li><strong>Access Services:</strong> Connect with reliable service providers for all your needs, including cleaning, maintenance, and more.</li>
+                    </ul>
+                    <p>We’re here to support you every step of the way, ensuring you find the perfect place to live and the services you need to thrive during your university years.</p>
+                </div>
             </div>
         </section>
-        
-        <div class="content">
-            <aside class="sidebar">
-                <ul>
-                    <li><a href="#"><i class="fas fa-building"></i> Property <span>0 ads</span></a></li>
-                    <li><a href="#"><i class="fas fa-couch"></i> Accommodation <span>0 ads</span></a></li>
-                </ul>
-            </aside>
-            
-            <section class="main-content">
-                <div class="ad-section">
-                    <h2>Got something to sell?</h2>
-                    <p>Post an advert for free!</p>
-                </div>
-            </section>
-        </div>
     </main>
-    
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>StudentHub is your ultimate destination for student accommodation, property, and services. We aim to make university life easier and more enjoyable for students across Nigeria.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@studenthub.com</p>
+                    <p>Phone: +234 123 456 7890</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.querySelector('.menu-toggle');

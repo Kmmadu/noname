@@ -31,120 +31,118 @@ header .logo a {
     text-decoration: none;
 }
 
-header .menu-toggle {
-    display: none; /* Hide menu toggle by default */
-    background: none;
-    border: none;
-    cursor: pointer;
+header .logo-image {
+    width: 150px; /* Adjusted the width to make the logo more visible */
+    height: auto;
 }
 
-header .main-nav ul {
+/* Navigation Styles */
+.main-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #000080; /* Navy Blue */
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Info Section Styles */
+.info-section {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.info-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
-header .main-nav a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease; /* Smooth transition for color change */
-}
-
-header .main-nav a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: red; /* Red color on hover */
-}
-
-/* Main Content Styles */
-.search-container {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #000080; /* Navy Blue */
-    color: white;
-}
-
-.search-container h1 {
-    margin-bottom: 20px;
-}
-
-.search-container span {
-    color: #f5f5f5; /* Light Grey */
-}
-
-.search-box {
-    display: inline-flex;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.search-box input {
-    padding: 10px;
-    border: none;
-    outline: none;
-}
-
-.search-box button {
-    background-color: #333; /* Dark Grey */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-.search-box button:hover {
-    background-color: #555; /* Slightly lighter grey */
-}
-
-/* Sidebar Styles */
-.sidebar {
-    background-color: #000080; /* Navy Blue */
-    color: white;
+.info-box {
+    background-color: #f4f4f4;
     padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar ul {
+.info-box h2 {
+    margin-top: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000080; /* Navy Blue */
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
     list-style: none;
     padding: 0;
 }
 
-.sidebar li {
-    margin-bottom: 15px;
+.footer-section ul li {
+    margin-bottom: 5px;
 }
 
-.sidebar a {
+.footer-section ul li a {
     color: white;
     text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    transition: color 0.3s;
 }
 
-.sidebar a:hover {
-    text-decoration: underline;
+.footer-section ul li a:hover {
+    color: #ff6347; /* Light Coral */
 }
 
-/* Main Content Section */
-.main-content {
-    padding: 20px;
+.footer-section .socials a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s;
 }
 
-.ad-section {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.ad-section h2 {
-    margin-top: 0;
-}
-
-.ad-section p {
-    color: #666; /* Grey */
+.footer-section .socials a:hover {
+    color: #ff6347; /* Light Coral */
 }
 
 /* Auth Container Styles */
@@ -209,46 +207,25 @@ header .main-nav a:hover {
 .auth-container a {
     color: #000080; /* Navy Blue */
     text-decoration: none;
-    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 .auth-container a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: red; /* Red color on hover */
+    text-decoration: underline;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
-    /* Hide and style menu toggle button for smaller screens */
-    header .menu-toggle {
-        display: block;
-        color: white;
-        font-size: 20px;
-        margin-right: 10px;
+    .info-section .container {
+        grid-template-columns: 1fr;
     }
-
-    header .main-nav {
-        display: none; /* Hide main navigation by default on smaller screens */
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background-color: #000080; /* Navy Blue */
-        text-align: center;
-        z-index: 1000;
-    }
-
-    header .main-nav.active {
-        display: block; /* Show main navigation when menu toggle is active */
-    }
-
-    header .main-nav ul {
+    
+    .footer-content {
         flex-direction: column;
-        gap: 10px;
-        margin: 0;
-        padding: 20px 0;
+        align-items: center;
+        text-align: center;
     }
-
-    header .main-nav a {
-        font-size: 18px;
+    
+    .footer-section {
+        margin-bottom: 20px;
     }
 }
