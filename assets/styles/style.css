@@ -319,3 +319,59 @@ footer .container {
         margin-bottom: 20px;
     }
 }
+.profile {
+    margin-left: auto; /* Moves the profile icon to the right */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.profile i {
+    color: white;
+}
+/* Main Section Styles */
+main {
+    text-align: center;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container h1 {
+    margin-bottom: 20px;
+    color: #000080;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #000080;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background-color: #333;
+}

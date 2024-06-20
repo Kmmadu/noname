@@ -20,6 +20,8 @@
             <!-- Navigation -->
             <nav class="main-nav">
                 <ul>
+                    <li><a href="buy-sell.html">Buy</a></li>
+                    <li><a href="#info-section">FAQs</a></li> <!-- Updated link to scroll to info-section -->
                     <li class="dropdown rent-dropdown">
                         <a href="#" class="rent-link">Rent</a>
                         <ul class="dropdown-content">
@@ -41,7 +43,7 @@
     </header>
     
     <main>
-        <section class="info-section">
+        <section id="info-section" class="info-section"> <!-- Added id="info-section" -->
             <div class="container grid">
                 <div class="info-box">
                     <h2>What is StudentHub?</h2>
@@ -122,6 +124,14 @@
                 rentItems.forEach(item => {
                     item.style.display = 'none';
                 });
+            });
+
+            // Smooth scroll to info-section when FAQs link is clicked
+            const faqLink = document.querySelector('a[href="#info-section"]');
+            faqLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                const section = document.getElementById('info-section');
+                section.scrollIntoView({ behavior: 'smooth' });
             });
         });
     </script>
