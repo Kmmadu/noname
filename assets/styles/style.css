@@ -1,95 +1,73 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
-
-/* Header Styles */
-header {
-    background-color: #000080; /* Navy Blue */
-    color: white;
-    padding: 10px 0;
-}
-
-header .container {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-}
-
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-header .logo a {
+    background-color: #00008B;
+    padding: 10px 16px;
     color: white;
-    text-decoration: none;
 }
-
-header .logo-image {
-    width: 150px; /* Adjust the width to make the logo more moderate */
-    height: auto;
-}
-
-/* Navigation Styles */
-.main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.header-left {
     display: flex;
-    gap: 15px;
+    align-items: center;
 }
-
-.main-nav ul li {
-    position: relative;
+.header-left img {
+    height: 50px;
+    margin-right: 10px;
 }
-
-.main-nav ul li a {
-    text-decoration: none;
+.header a, .dropdown .dropbtn {
+    display: block;
     color: white;
-    padding: 10px;
-    transition: color 0.3s, background-color 0.3s;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-
-.main-nav ul li a:hover {
-    color: #000080; /* Navy Blue */
-    background-color: white;
+.header a:hover, .dropdown:hover .dropbtn {
+    background-color: #fff;
+    color: black;
     border-radius: 5px;
 }
-
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.dropdown {
+    position: relative;
+}
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f4f4f4;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    background-color: #f9f9f9;
     min-width: 160px;
-    top: 100%;
-    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-
-.dropdown-content li a {
-    color: #333;
+.dropdown-content a {
+    float: none;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
-
-.dropdown-content li a:hover {
+.dropdown-content a:hover {
     background-color: #ddd;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.dropbtn {
+    background-color: #00008B;
+    border: none;
+    outline: none;
+}
+
+
+
 
 /* Responsive Navigation */
 .menu-toggle {
@@ -111,7 +89,7 @@ header .logo-image {
         width: 100%;
         padding: 10px 0;
     }
-    
+
     .main-nav ul.show {
         display: flex;
     }
@@ -152,7 +130,8 @@ header .logo-image {
 
 .auth-container h1 {
     margin-bottom: 20px;
-    color: #000080; /* Navy Blue */
+    color: #000080;
+    /* Navy Blue */
 }
 
 .auth-container form {
@@ -171,7 +150,8 @@ header .logo-image {
 .auth-container button[type="submit"],
 .auth-button {
     padding: 10px;
-    background-color: #000080; /* Navy Blue */
+    background-color: #000080;
+    /* Navy Blue */
     color: white;
     border: none;
     border-radius: 5px;
@@ -191,7 +171,8 @@ header .logo-image {
 }
 
 .auth-container a {
-    color: #000080; /* Navy Blue */
+    color: #000080;
+    /* Navy Blue */
     text-decoration: none;
 }
 
@@ -201,11 +182,13 @@ header .logo-image {
 
 /* Social Auth Buttons */
 .auth-button.google {
-    background-color: #db4437; /* Google Red */
+    background-color: #db4437;
+    /* Google Red */
 }
 
 .auth-button.facebook {
-    background-color: #3b5998; /* Facebook Blue */
+    background-color: #3b5998;
+    /* Facebook Blue */
 }
 
 .auth-button.google:hover {
@@ -249,7 +232,8 @@ header .logo-image {
 
 /* Footer Styles */
 footer {
-    background-color: #000080; /* Navy Blue */
+    background-color: #000080;
+    /* Navy Blue */
     color: white;
     padding: 20px 0;
 }
@@ -319,8 +303,10 @@ footer .container {
         margin-bottom: 20px;
     }
 }
+
 .profile {
-    margin-left: auto; /* Moves the profile icon to the right */
+    margin-left: auto;
+    /* Moves the profile icon to the right */
     padding: 10px;
     cursor: pointer;
 }
@@ -328,6 +314,7 @@ footer .container {
 .profile i {
     color: white;
 }
+
 /* Main Section Styles */
 main {
     text-align: center;

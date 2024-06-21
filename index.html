@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,62 +8,82 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <!-- Logo with image -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/logos/studenthub.png" alt="StudentHub Logo" class="logo-image">
-                </a>
+        <div class="header">
+            <div class="header-left">
+                <img src="assets/logos/studenthub.png" alt="Logo" onclick="window.location.href='index.html'"> 
+                
             </div>
-            
-            <!-- Navigation -->
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="buy-sell.html">Buy</a></li>
-                    <li><a href="#info-section">FAQs</a></li> <!-- Updated link to scroll to info-section -->
-                    <li class="dropdown rent-dropdown">
-                        <a href="#" class="rent-link">Rent</a>
-                        <ul class="dropdown-content">
-                            <li class="rent-item"><a href="flats.html">Flats For Rent</a></li>
-                            <li class="rent-item"><a href="selfcons.html">Selfcons For Rent</a></li>
-                            <li class="rent-item"><a href="singlerooms.html">Single rooms For Rent</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="register.html">Sign Up</a></li>
-                    <li><a href="signin.html">Log In</a></li>
-                </ul>
-            </nav>
-            
+            <div class="header-right">
+                <div class="dropdown">
+                    <button class="dropbtn">Services 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="">Accommodation</a>
+                        <a href="">Beauty services</a>
+                        <a href="">Catering services</a>
+                        <a href="">Buy and sell</a>
+                    </div>
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">Rent 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="flats.html">Flats for rent</a>
+                        <a href="selfcons.html"> Selfcons for rent</a>
+                        <a href="singlerooms.html">Single rooms</a>
+                    </div>
+                </div> 
+                <a href="#info-section">FAQs</a>
+                <a href="register.html">Sign Up</a>
+                <a href="signin.html">Log In</a>
+            </div>
+        </div>
+
             <!-- Menu toggle button -->
             <button class="menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
-        </div>
     </header>
-    
+
     <main>
         <section id="info-section" class="info-section"> <!-- Added id="info-section" -->
             <div class="container grid">
                 <div class="info-box">
                     <h2>What is StudentHub?</h2>
-                    <p>StudentHub is dedicated to transforming the student living experience by providing a comprehensive platform tailored specifically for students. Our mission is to simplify the search for accommodation, property purchases, and essential services, making your university life more convenient and enjoyable.</p>
+                    <p>StudentHub is dedicated to transforming the student living experience by providing a
+                        comprehensive platform tailored specifically for students. Our mission is to simplify the search
+                        for accommodation, property purchases, and essential services, making your university life more
+                        convenient and enjoyable.</p>
                 </div>
                 <div class="info-box">
                     <h2>What Can You Find Here?</h2>
-                    <p>At StudentHub, we connect you with the best accommodation options, property listings, and service providers across Nigerian universities. Whether you’re looking for a cozy dorm, a shared apartment, or a property to invest in, our platform offers a wide range of verified listings to meet your needs. We also provide easy reservation options and access to trusted service providers to ensure your stay is comfortable and hassle-free.</p>
+                    <p>At StudentHub, we connect you with the best accommodation options, property listings, and service
+                        providers across Nigerian universities. Whether you’re looking for a cozy dorm, a shared
+                        apartment, or a property to invest in, our platform offers a wide range of verified listings to
+                        meet your needs. We also provide easy reservation options and access to trusted service
+                        providers to ensure your stay is comfortable and hassle-free.</p>
                 </div>
                 <div class="info-box">
                     <h2>How Can StudentHub Help You?</h2>
-                    <p>We understand the unique challenges students face when searching for accommodation and services. Our user-friendly platform allows you to:</p>
+                    <p>We understand the unique challenges students face when searching for accommodation and services.
+                        Our user-friendly platform allows you to:</p>
                     <ul>
-                        <li><strong>Find Accommodation:</strong> Browse a variety of housing options, from dormitories to private apartments, tailored to fit your budget and preferences.</li>
-                        <li><strong>Make Reservations:</strong> Secure your desired accommodation quickly and easily through our reservation system.</li>
-                        <li><strong>Buy Property:</strong> Explore investment opportunities with our property listings, perfect for students or their families looking to purchase real estate.</li>
-                        <li><strong>Access Services:</strong> Connect with reliable service providers for all your needs, including cleaning, maintenance, and more.</li>
+                        <li><strong>Find Accommodation:</strong> Browse a variety of housing options, from dormitories
+                            to private apartments, tailored to fit your budget and preferences.</li>
+                        <li><strong>Make Reservations:</strong> Secure your desired accommodation quickly and easily
+                            through our reservation system.</li>
+                        <li><strong>Buy Property:</strong> Explore investment opportunities with our property listings,
+                            perfect for students or their families looking to purchase real estate.</li>
+                        <li><strong>Access Services:</strong> Connect with reliable service providers for all your
+                            needs, including cleaning, maintenance, and more.</li>
                     </ul>
-                    <p>We’re here to support you every step of the way, ensuring you find the perfect place to live and the services you need to thrive during your university years.</p>
+                    <p>We’re here to support you every step of the way, ensuring you find the perfect place to live and
+                        the services you need to thrive during your university years.</p>
                 </div>
             </div>
         </section>
@@ -73,7 +94,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>About Us</h4>
-                    <p>StudentHub is your ultimate destination for student accommodation, property, and services. We aim to make university life easier and more enjoyable for students across Nigeria.</p>
+                    <p>StudentHub is your ultimate destination for student accommodation, property, and services. We aim
+                        to make university life easier and more enjoyable for students across Nigeria.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -101,11 +123,11 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const menuToggle = document.querySelector('.menu-toggle');
             const mainNav = document.querySelector('.main-nav');
 
-            menuToggle.addEventListener('click', function() {
+            menuToggle.addEventListener('click', function () {
                 mainNav.classList.toggle('active');
                 menuToggle.innerHTML = mainNav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
             });
@@ -114,13 +136,13 @@
             const rentDropdown = document.querySelector('.rent-dropdown');
             const rentItems = document.querySelectorAll('.rent-item');
 
-            rentDropdown.addEventListener('mouseenter', function() {
+            rentDropdown.addEventListener('mouseenter', function () {
                 rentItems.forEach(item => {
                     item.style.display = 'block';
                 });
             });
 
-            rentDropdown.addEventListener('mouseleave', function() {
+            rentDropdown.addEventListener('mouseleave', function () {
                 rentItems.forEach(item => {
                     item.style.display = 'none';
                 });
@@ -128,7 +150,7 @@
 
             // Smooth scroll to info-section when FAQs link is clicked
             const faqLink = document.querySelector('a[href="#info-section"]');
-            faqLink.addEventListener('click', function(event) {
+            faqLink.addEventListener('click', function (event) {
                 event.preventDefault();
                 const section = document.getElementById('info-section');
                 section.scrollIntoView({ behavior: 'smooth' });
@@ -138,4 +160,5 @@
 
     <script src="assets/scripts/script.js"></script>
 </body>
+
 </html>
