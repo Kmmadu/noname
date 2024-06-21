@@ -16,6 +16,10 @@
                 <img src="assets/logos/studenthub.png" alt="Logo" onclick="window.location.href='index.html'"> 
                 
             </div>
+            <!-- Menu toggle button -->
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="header-right">
                 <div class="dropdown">
                     <button class="dropbtn">Services 
@@ -44,10 +48,6 @@
             </div>
         </div>
 
-            <!-- Menu toggle button -->
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
     </header>
 
     <main>
@@ -132,23 +132,6 @@
                 menuToggle.innerHTML = mainNav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
             });
 
-            // Show rent items on hover
-            const rentDropdown = document.querySelector('.rent-dropdown');
-            const rentItems = document.querySelectorAll('.rent-item');
-
-            rentDropdown.addEventListener('mouseenter', function () {
-                rentItems.forEach(item => {
-                    item.style.display = 'block';
-                });
-            });
-
-            rentDropdown.addEventListener('mouseleave', function () {
-                rentItems.forEach(item => {
-                    item.style.display = 'none';
-                });
-            });
-
-            // Smooth scroll to info-section when FAQs link is clicked
             const faqLink = document.querySelector('a[href="#info-section"]');
             faqLink.addEventListener('click', function (event) {
                 event.preventDefault();
@@ -157,6 +140,7 @@
             });
         });
     </script>
+
 
     <script src="assets/scripts/script.js"></script>
 </body>

@@ -66,9 +66,6 @@ body {
     outline: none;
 }
 
-
-
-
 /* Responsive Navigation */
 .menu-toggle {
     display: none;
@@ -79,45 +76,39 @@ body {
     cursor: pointer;
 }
 
+.main-nav {
+    display: none;
+}
+
+.main-nav.active {
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 768px) {
-    .main-nav ul {
+    .header-right {
+        display: none;
+    }
+
+    .main-nav {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0;
-        display: none;
         background-color: #000080;
         width: 100%;
         padding: 10px 0;
     }
 
-    .main-nav ul.show {
-        display: flex;
-    }
-
-    .main-nav ul li a {
+    .main-nav a {
         padding: 10px 20px;
+        width: 100%;
     }
 
     .menu-toggle {
         display: block;
     }
-
-    .dropdown-content {
-        position: relative;
-        background-color: #000080;
-    }
-
-    .dropdown-content li a {
-        color: white;
-        padding: 10px 20px;
-    }
-
-    .dropdown-content li a:hover {
-        background-color: #333;
-    }
 }
 
-/* Auth Container Styles */
+/* Rest of the CSS */
 .auth-container {
     max-width: 400px;
     margin: 50px auto;
@@ -131,7 +122,6 @@ body {
 .auth-container h1 {
     margin-bottom: 20px;
     color: #000080;
-    /* Navy Blue */
 }
 
 .auth-container form {
@@ -151,7 +141,6 @@ body {
 .auth-button {
     padding: 10px;
     background-color: #000080;
-    /* Navy Blue */
     color: white;
     border: none;
     border-radius: 5px;
@@ -172,7 +161,6 @@ body {
 
 .auth-container a {
     color: #000080;
-    /* Navy Blue */
     text-decoration: none;
 }
 
@@ -180,15 +168,12 @@ body {
     text-decoration: underline;
 }
 
-/* Social Auth Buttons */
 .auth-button.google {
     background-color: #db4437;
-    /* Google Red */
 }
 
 .auth-button.facebook {
     background-color: #3b5998;
-    /* Facebook Blue */
 }
 
 .auth-button.google:hover {
@@ -199,7 +184,6 @@ body {
     background-color: #2d4373;
 }
 
-/* Info Section Styles */
 .info-section {
     padding: 50px 20px;
     background-color: white;
@@ -230,10 +214,8 @@ body {
     margin-top: 0;
 }
 
-/* Footer Styles */
 footer {
     background-color: #000080;
-    /* Navy Blue */
     color: white;
     padding: 20px 0;
 }
@@ -257,6 +239,8 @@ footer .container {
     flex: 1;
     padding: 0 10px;
 }
+
+
 
 .footer-section h4 {
     margin-bottom: 10px;
