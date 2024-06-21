@@ -385,3 +385,47 @@ main {
     color: #666;
     margin-top: 10px;
 }
+/* Welcome Section Styles */
+.welcome-section .container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.welcome-section h1 {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome-section .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-section .image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.welcome-section .text-box {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .welcome-section .container {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-section h1 {
+        grid-column: span 1;
+    }
+}
