@@ -13,8 +13,7 @@
     <header>
         <div class="header">
             <div class="header-left">
-                <img src="assets/logos/studenthub.png" alt="Logo" onclick="window.location.href='index.html'"> 
-                
+                <img src="assets/logos/studenthub.png" alt="Logo" onclick="window.location.href='index.html'">
             </div>
             <!-- Menu toggle button -->
             <button class="menu-toggle" aria-label="Toggle menu">
@@ -22,71 +21,86 @@
             </button>
             <div class="header-right">
                 <div class="dropdown">
-                    <button class="dropbtn">Services 
+                    <button class="dropbtn">Services
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="">Accommodation</a>
                         <a href="">Beauty services</a>
                         <a href="">Catering services</a>
-                        <a href="">Buy and sell</a>
+                        <a href="buy-sell.html">Buy and sell</a>
                     </div>
-                </div> 
+                </div>
                 <div class="dropdown">
-                    <button class="dropbtn">Rent 
+                    <button class="dropbtn">Accommodations
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="flats.html">Flats for rent</a>
-                        <a href="selfcons.html"> Selfcons for rent</a>
-                        <a href="singlerooms.html">Single rooms</a>
+                        <a href="flats.html">Bookings</a>
+                        <a href="flats.html">Flats</a>
+                        <a href="selfcons.html"> Selfcons</a>
+                        <a href="singlerooms.html">Singles</a>
                     </div>
-                </div> 
+                </div>
                 <a href="#info-section">FAQs</a>
                 <a href="register.html">Sign Up</a>
                 <a href="signin.html">Log In</a>
             </div>
         </div>
-
     </header>
 
     <main>
-        <section id="info-section" class="info-section"> <!-- Added id="info-section" -->
-            <div class="container grid">
-                <div class="info-box">
-                    <h2>What is StudentHub?</h2>
-                    <p>StudentHub is dedicated to transforming the student living experience by providing a
-                        comprehensive platform tailored specifically for students. Our mission is to simplify the search
-                        for accommodation, property purchases, and essential services, making your university life more
-                        convenient and enjoyable.</p>
-                </div>
-                <div class="info-box">
-                    <h2>What Can You Find Here?</h2>
-                    <p>At StudentHub, we connect you with the best accommodation options, property listings, and service
-                        providers across Nigerian universities. Whether you’re looking for a cozy dorm, a shared
-                        apartment, or a property to invest in, our platform offers a wide range of verified listings to
-                        meet your needs. We also provide easy reservation options and access to trusted service
-                        providers to ensure your stay is comfortable and hassle-free.</p>
-                </div>
-                <div class="info-box">
-                    <h2>How Can StudentHub Help You?</h2>
-                    <p>We understand the unique challenges students face when searching for accommodation and services.
-                        Our user-friendly platform allows you to:</p>
-                    <ul>
-                        <li><strong>Find Accommodation:</strong> Browse a variety of housing options, from dormitories
-                            to private apartments, tailored to fit your budget and preferences.</li>
-                        <li><strong>Make Reservations:</strong> Secure your desired accommodation quickly and easily
-                            through our reservation system.</li>
-                        <li><strong>Buy Property:</strong> Explore investment opportunities with our property listings,
-                            perfect for students or their families looking to purchase real estate.</li>
-                        <li><strong>Access Services:</strong> Connect with reliable service providers for all your
-                            needs, including cleaning, maintenance, and more.</li>
-                    </ul>
-                    <p>We’re here to support you every step of the way, ensuring you find the perfect place to live and
-                        the services you need to thrive during your university years.</p>
-                </div>
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="container">
+                <h1>Welcome to StudentHub</h1>
+                <p>StudentHub is your one-stop platform for finding the perfect student accommodation, whether you're looking to rent, buy, or find essential services. Our mission is to make your university experience smooth and enjoyable by providing verified listings and reliable service providers.</p>
+                <img src="assets/images/welcome.jpg" alt="Welcome to StudentHub" class="responsive">
             </div>
         </section>
+
+       <!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <div class="container">
+        <h2>Why Choose StudentHub?</h2>
+        <div class="grid">
+            <div class="info-box">
+                <img src="assets/images/easy-search.jpg" alt="Easy Search">
+                <h3>Easy Search</h3>
+                <p>Our user-friendly platform allows you to easily search for accommodation that fits your preferences and budget. Filter by location, type, and amenities to find your ideal place.</p>
+            </div>
+            <div class="info-box">
+                <img src="assets/images/verified-listings.jpg" alt="Verified Listings">
+                <h3>Verified Listings</h3>
+                <p>We ensure that all our property listings are verified, providing you with accurate and trustworthy information so you can make informed decisions.</p>
+            </div>
+            <div class="info-box">
+                <img src="assets/images/student-support.jpg" alt="Student Support">
+                <h3>Student Support</h3>
+                <p>Our dedicated support team is here to help you every step of the way, from finding accommodation to settling in and accessing essential services.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+       <!-- FAQ Section -->
+<section id="info-section" class="info-section">
+    <h2>FAQ</h2>
+    <div class="container grid">
+        <div class="info-box">
+            <h3>What accommodation options are available?</h3>
+            <p>We offer a range of accommodation options to suit your needs. Whether you're looking for shared homes or entire apartments, we have flexible options designed to fit your preferences and budget.</p>
+        </div>
+        <div class="info-box">
+            <h3>How quickly can I book a home?</h3>
+            <p>We have streamlined the entire booking process to make it as quick and efficient as possible. You can find and rent your future home in just a few clicks, allowing you to move in within minutes rather than days.</p>
+        </div>
+        <div class="info-box">
+            <h3>Are the listings verified?</h3>
+            <p>Yes, all our listings are verified to ensure you receive accurate and trustworthy information. We take pride in providing reliable property details to help you make informed decisions.</p>
+        </div>
+    </div>
+</section>
+
     </main>
 
     <footer>
@@ -94,8 +108,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>About Us</h4>
-                    <p>StudentHub is your ultimate destination for student accommodation, property, and services. We aim
-                        to make university life easier and more enjoyable for students across Nigeria.</p>
+                    <p>StudentHub is your ultimate destination for student accommodation, property, and services. We aim to make university life easier and more enjoyable for students across Nigeria.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -140,7 +153,6 @@
             });
         });
     </script>
-
 
     <script src="assets/scripts/script.js"></script>
 </body>

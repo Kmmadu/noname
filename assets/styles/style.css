@@ -346,3 +346,42 @@ main {
 .search-box button:hover {
     background-color: #333;
 }
+/* Container styling */
+.why-choose-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Grid layout */
+.why-choose-us .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Info box styling */
+.why-choose-us .info-box {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.why-choose-us .info-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.why-choose-us .info-box h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.why-choose-us .info-box p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
