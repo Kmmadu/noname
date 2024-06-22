@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,52 +9,73 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <!-- Logo with image -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/logos/studenthub.png" alt="StudentHub Logo" class="logo-image">
-                </a>
+    <header class="header">
+        <div class="header-left">
+            <img src="assets/logos/studenthub.png" alt="Logo" onclick="window.location.href='index.html'">
+        </div>
+        <!-- Menu toggle button -->
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="header-right">
+            <div class="dropdown">
+                <button class="dropbtn">Services
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Beauty services</a>
+                    <a href="#">Catering services</a>
+                    <a href="buy-sell.html">Buy and sell</a>
+                </div>
             </div>
-            
-            <!-- Navigation -->
-            <nav class="main-nav">
-                <ul>
-                    <li class="dropdown rent-dropdown">
-                        <a href="#" class="rent-link">Rent</a>
-                        <ul class="dropdown-content">
-                            <li class="rent-item"><a href="flats.html">Flats For Rent</a></li>
-                            <li class="rent-item"><a href="selfcons.html">Selfcons For Rent</a></li>
-                            <li class="rent-item"><a href="singlerooms.html">Single rooms For Rent</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="register.html">Sign Up</a></li>
-                    <li><a href="signin.html">Log In</a></li>
-                </ul>
-            </nav>
-            
-            <!-- Menu toggle button -->
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="dropdown">
+                <button class="dropbtn">Accommodations
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="booking.html">Bookings</a>
+                    <a href="flats.html">Flats</a>
+                    <a href="selfcons.html">Selfcons</a>
+                    <a href="singlerooms.html">Singles</a>
+                </div>
+            </div>
+            <a href="register.html">Sign Up</a>
+            <a href="signin.html">Log In</a>
         </div>
     </header>
-    
+
     <main>
-        <section class="listings">
+        <section class="flats-section">
             <div class="container">
                 <h1>Flats For Rent</h1>
-                <div class="listing">
-                    <!-- Example listing item -->
-                    <div class="listing-item">
-                        <h2>2 Bedroom Flat</h2>
-                        <p>Location: Lekki, Lagos</p>
-                        <p>Price: ₦1,200,000 per year</p>
-                        <a href="details.html" class="btn">View Details</a>
+                <div class="grid">
+                    <div class="flat-card">
+                        <img src="assets/images/flats/flat1.jpg" alt="Flat 1">
+                        <div class="flat-info">
+                            <h2>2 Bedroom Flat in Lekki</h2>
+                            <p>Price: ₦1,200,000 per year</p>
+                            <a href="details.html" class="btn">View Details</a>
+                        </div>
                     </div>
-                    <!-- Add more listings as needed -->
+                    <div class="flat-card">
+                        <img src="assets/images/flats/flat2.jpg" alt="Flat 2">
+                        <div class="flat-info">
+                            <h2>3 Bedroom Flat in Ikeja</h2>
+                            <p>Price: ₦1,800,000 per year</p>
+                            <a href="details.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="flat-card">
+                        <img src="assets/images/flats/flat3.jpg" alt="Flat 3">
+                        <div class="flat-info">
+                            <h2>1 Bedroom Flat in Victoria Island</h2>
+                            <p>Price: ₦900,000 per year</p>
+                            <a href="details.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Add more flat cards as needed -->
                 </div>
             </div>
         </section>
@@ -100,25 +122,10 @@
                 mainNav.classList.toggle('active');
                 menuToggle.innerHTML = mainNav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
             });
-
-            // Show rent items on hover
-            const rentDropdown = document.querySelector('.rent-dropdown');
-            const rentItems = document.querySelectorAll('.rent-item');
-
-            rentDropdown.addEventListener('mouseenter', function() {
-                rentItems.forEach(item => {
-                    item.style.display = 'block';
-                });
-            });
-
-            rentDropdown.addEventListener('mouseleave', function() {
-                rentItems.forEach(item => {
-                    item.style.display = 'none';
-                });
-            });
         });
     </script>
 
     <script src="assets/scripts/script.js"></script>
 </body>
+
 </html>
