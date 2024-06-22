@@ -1,8 +1,23 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styles */
 .header {
     display: flex;
     justify-content: space-between;
@@ -11,14 +26,17 @@ body {
     padding: 10px 16px;
     color: white;
 }
+
 .header-left {
     display: flex;
     align-items: center;
 }
+
 .header-left img {
     height: 50px;
     margin-right: 10px;
 }
+
 .header a, .dropdown .dropbtn {
     display: block;
     color: white;
@@ -26,18 +44,22 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .header a:hover, .dropdown:hover .dropbtn {
     background-color: #fff;
     color: black;
     border-radius: 5px;
 }
+
 .header-right {
     display: flex;
     align-items: center;
 }
+
 .dropdown {
     position: relative;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -46,6 +68,7 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
 .dropdown-content a {
     float: none;
     color: black;
@@ -54,12 +77,15 @@ body {
     display: block;
     text-align: left;
 }
+
 .dropdown-content a:hover {
     background-color: #ddd;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .dropbtn {
     background-color: #00008B;
     border: none;
@@ -108,7 +134,7 @@ body {
     }
 }
 
-/* Rest of the CSS */
+/* Authentication Container */
 .auth-container {
     max-width: 400px;
     margin: 50px auto;
@@ -184,6 +210,7 @@ body {
     background-color: #2d4373;
 }
 
+/* Information Section */
 .info-section {
     padding: 50px 20px;
     background-color: white;
@@ -214,6 +241,7 @@ body {
     margin-top: 0;
 }
 
+/* Footer Styles */
 footer {
     background-color: #000080;
     color: white;
@@ -239,8 +267,6 @@ footer .container {
     flex: 1;
     padding: 0 10px;
 }
-
-
 
 .footer-section h4 {
     margin-bottom: 10px;
@@ -288,9 +314,9 @@ footer .container {
     }
 }
 
+/* Profile Styles */
 .profile {
     margin-left: auto;
-    /* Moves the profile icon to the right */
     padding: 10px;
     cursor: pointer;
 }
@@ -304,6 +330,7 @@ main {
     text-align: center;
 }
 
+/* Search Container Styles */
 .search-container {
     max-width: 600px;
     margin: 20px auto;
@@ -346,21 +373,20 @@ main {
 .search-box button:hover {
     background-color: #333;
 }
-/* Container styling */
+
+/* "Why Choose Us" Section Styles */
 .why-choose-us .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-/* Grid layout */
 .why-choose-us .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-/* Info box styling */
 .why-choose-us .info-box {
     background-color: #fff;
     border: 1px solid #e0e0e0;
@@ -387,8 +413,8 @@ main {
 }
 /* Welcome Section Styles */
 .welcome-section .container {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     max-width: 1200px;
@@ -397,14 +423,29 @@ main {
 }
 
 .welcome-section h1 {
-    grid-column: span 2;
     text-align: center;
     margin-bottom: 20px;
+    width: 100%;
+}
+
+.welcome-section .grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.welcome-section .text-box {
+    flex: 1;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
 }
 
 .welcome-section .image-box {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -414,18 +455,16 @@ main {
     border-radius: 8px;
 }
 
-.welcome-section .text-box {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #333;
-}
-
 @media (max-width: 768px) {
     .welcome-section .container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .welcome-section .grid {
+        flex-direction: column;
     }
 
     .welcome-section h1 {
-        grid-column: span 1;
+        text-align: center;
     }
 }
