@@ -21,3 +21,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 });
+// Get the header element
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the header
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
+
+// Execute myFunction when the user scrolls the page
+window.onscroll = function() {
+    myFunction();
+};
+function toggleMenu() {
+    const menuContent = document.querySelector('.menu-content');
+    menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+}
+

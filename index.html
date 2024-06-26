@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,12 +13,12 @@
 
 <body>
     <header>
-        <div class="header">
+        <div class="header" id="myHeader">
             <div class="header-left">
                 <img src="assets/logos/studenthub.png" alt="Logo" onclick="window.location.href='index.html'">
             </div>
             <!-- Menu toggle button -->
-            <button class="menu-toggle" aria-label="Toggle menu">
+            <button class="menu-toggle" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="header-right">
@@ -65,6 +66,20 @@
             </div>
         </section>
 
+        <!-- Explore Section -->
+        <section class="explore-section">
+            <div class="container">
+                <div class="text-box">
+                    <h1>Explore Services</h1>
+                    <p>At StudentHub, we’re more than just accommodation. We’re your all-in-one platform for student living. Explore our diverse range of services:</p>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/Location.jpg" alt="location">
+                    <div class="label">Accommodations</div>
+                </div>
+            </div>
+        </section>
+
         <!-- Why Choose Us Section -->
         <section class="why-choose-us">
             <div class="container">
@@ -107,7 +122,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -121,7 +135,7 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
