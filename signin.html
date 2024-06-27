@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/logos/studenthub.png" alt="StudentHub Logo" class="logo-image">
-                </a>
-            </div>
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="assets/logos/studenthub.png" alt="StudentHub Logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <a href="services.html">Services</a>
+            <a href="accommodation.html">Accommodation</a>
         </div>
     </header>
     <main>
         <section class="auth-container">
             <h1>Log In</h1>
-            <form>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
+            <form action="login_process.php" method="POST">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
                 <button type="submit">Log In</button>
             </form>
             <p>Or log in with:</p>
@@ -30,5 +32,32 @@
             <p>Don't have an account? <a href="register.html">Sign Up</a></p>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">What We Offer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
