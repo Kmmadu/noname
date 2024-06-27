@@ -4,60 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In - StudentHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="myHeader">
         <div class="header-left">
-            <a href="index.html">
-                <img src="assets/logos/studenthub.png" alt="StudentHub Logo">
-            </a>
+            <img src="assets/logos/studenthub.png" alt="Logo" onclick="window.location.href='index.html'">
         </div>
+        <!-- Menu toggle button -->
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
         <div class="header-right">
-            <a href="services.html">Services</a>
-            <a href="accommodation.html">Accommodation</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Beauty services</a>
+                    <a href="#">Catering services</a>
+                    <a href="buy-sell.html">Buy and sell</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Accommodations
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="booking.html">Bookings</a>
+                    <a href="flats.html">Flats</a>
+                    <a href="selfcons.html">Selfcons</a>
+                    <a href="singlerooms.html">Singles</a>
+                </div>
+            </div>
+            <a href="register.html">Sign Up</a>
+            <a href="signin.html">Log In</a>
         </div>
     </header>
+
     <main>
         <section class="auth-container">
-            <h1>Log In</h1>
-            <form action="login_process.php" method="POST">
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Log In</button>
+            <h1>Log In to StudentHub</h1>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="auth-button">Log In</button>
+                <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+                <p>Forgot your password? <a href="#">Reset it here</a></p>
             </form>
-            <p>Or log in with:</p>
-            <button class="auth-button google">Google</button>
-            <button class="auth-button facebook">Facebook</button>
-            <p>Don't have an account? <a href="register.html">Sign Up</a></p>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>About Us</h4>
+                    <p>StudentHub is your ultimate destination for student accommodation, property, and services. We aim to make university life easier and more enjoyable for students across Nigeria.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="about.html">Our Story</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">What We Offer</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
+                    <h4>Contact Us</h4>
+                    <p>Email: support@studenthub.com</p>
+                    <p>Phone: +234 123 456 7890</p>
                     <div class="socials">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>
