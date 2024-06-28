@@ -330,7 +330,59 @@ footer .container {
 
 /* Main Section Styles */
 main {
+    padding: 40px 20px;
     text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1, .about-section h2 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* New styles for the team member layout */
+.team-member {
+    display: flex;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.team-member .content {
+    flex-grow: 1;
+}
+
+.team-member h3 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 20px;
 }
 
 /* Search Container Styles */
